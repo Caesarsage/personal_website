@@ -30,6 +30,16 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(morgan('tiny'));
 
+// FLASH CONFIG
+app.use(flash());
+// locals: available to the template 
+// must be after express session  and passport config
+app.use((req, res, next )=>{
+  console.log(req.session);
+  res.locals.success = req.flash('success');
+  res.locals.error = req.flash('error');
+  next();
+});
 
 // Connection
 const port = process.env.PORT || 3000
