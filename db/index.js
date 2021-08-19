@@ -2,9 +2,9 @@ import mongoose from "mongoose";
 import chalk from "chalk";
 
 export const db = async () => {
+  const dbUrl = process.env.DB_URL ;
   try {
-    const connectMongoose = await mongoose.connect(
-      "mongodb://localhost:27017/onlineResume",
+    const connectMongoose = await mongoose.connect( dbUrl,
       {
         useCreateIndex: true,
         useNewUrlParser: true,
