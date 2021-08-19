@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+.bg-color {
+  background: #f3efe0;
+}
+h1,
+h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+strong,
+b {
+  font-family: "Open Sans", sans-serif !important;
+  margin-bottom: 20px;
+}
+h2,
+h3 {
+  font-weight: 300;
+  color: #22a39f;
+}
+h2 {
+  font-size: 54px;
+  text-align: center;
+}
+
+#experiences .experience {
+  margin-bottom: 20px;
+}
+#experiences .experience p > strong {
+  display: block;
+  padding-top: 8px;
+  margin-bottom: 10px;
+}
+#experiences .experience .experience-details {
+  display: block;
+  margin-top: 6px;
+}
+
+.bg-img {
+  background: url("/typing-tech.gif") no-repeat top center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.jumbotron .overlay {
+  background-color: #22a39f;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+  z-index: 2;
+  overflow-x: hidden;
+}
+
+.jumbotron .container {
+  position: relative;
+  top: 28%;
+  z-index: 4;
+  text-align: center;
+}
+.container {
+  max-width: 1280px;
+  padding: 40px 180px;
+}
+.jumbotron .scroll-down {
+  height: 70px;
+  width: 110px;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  right: 5%;
+  background-color: #222222;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 6;
+}
+.fa-arrow-down {
+  animation: scroll 0.8s infinite;
+}
+
+.jumbotron .container h1 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ffffff;
+  border-bottom-color: rgba(255, 255, 255, 0.35);
+  display: inline-block;
+}
+.jumbotron .container > * {
+  text-align: center;
+  color: #ffffff;
+}
+.jumbotron .container .lead {
+  font-size: 28px;
+}
+.jumbotron .container > * {
+  text-align: center;
+  color: #ffffff;
+}
+p.lead {
+  text-align: center;
+  color: #727878;
+}
+
+@keyframes scroll {
+  0% {
+    transform: scaleY(0.8);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.body-intro {
+  margin-top: 3em;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+#profile .row > div img {
+  width: 100%;
+  max-width: 240px;
+  max-height: 240px;
+  border-radius: 100%;
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.navbar {
+  border: 0px;
+  background-color: #222222;
+  margin-top: 1em;
+  height: fit-content;
+  /* position: absolute !important; */
+  /* top: 0%; */
+  right: 5%;
+  left: 86.8%;
+  width: 110px;
+  transition: all 3s ease-in!important;
+}
+
+.navbar .nav > li {
+  display: block;
+  float: none;
+  height: 80px;
+}
+.nav-item{
+  padding: 2em 0;
+}
+@media (max-width: 767px) {
+  .navbar {
+    left: 0px;
+    width: 100%;
+    margin-top: 0;
+  }
+  .navbar .nav > li {
+    height: 60px;
+  }
+  .container {
+    padding: 60px 20px;
+    min-width: 280px;
+  }
+  .jumbotron .container {
+    top: 20%;
+    padding-top: 0px;
+  }
+  .jumbotron .scroll-down {
+    width: 100%;
+    right: 0px;
+    border-radius: 0;
+  }
+  .jumbotron .container {
+    top: 20%;
+    padding-top: 0px;
+  }
+  #profile .row * {
+    text-align: center;
+  }
+}
+
+/* navbar */
+/*
+=============== 
+Navbar
+===============
+*/
+.affix {
+  top: 0;
+  width: 100%;
+  z-index: 9999 !important;
+}
+.affix ~ .container-fluid {
+  position: relative;
+  top: 50px;
+}
+nav {
+  background: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav-toggle {
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  transform: rotate(90deg);
+}
+.nav-link {
+  color: gray;
+  font-size: 1rem;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+}
+
+.nav-link:hover {
+  background: #22a39f;
+  color: #ffffff;
+  transition: all 0.3s linear;
+}
+@media screen and (min-width: 800px) {
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links {
+    display: flex;
+  }
+  .nav-link:hover {
+    padding: 5px;
+  }
+}
