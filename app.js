@@ -54,8 +54,8 @@ app.use((req, res, next) => {
 });
 
 
-app.get('/', (req,res)=>{
-  res.render('index')
+app.get('/', async (req,res)=>{
+  await res.render('index')
 })
 
 app.use('/contact', router)
