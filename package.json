@@ -7,9 +7,9 @@
   "engines": {
     "node": "14.6.0"
   },
-  "scripts": {
-    "start": "node run app",
-    "dev": "nodemon app",
+   "scripts": {
+    "start": "node app.js",
+    "dev":"nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
