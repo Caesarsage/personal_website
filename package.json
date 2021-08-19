@@ -4,6 +4,9 @@
   "description": "A simple resume site with contact form functionality using express, ejs, mongoose and nodemailer",
   "main": "app.js",
   "type": "module",
+  "engines": {
+    "node": "14.6.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
