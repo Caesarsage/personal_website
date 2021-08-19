@@ -1,7 +1,5 @@
 import dot from "dotenv";
-if (process.env.NODE_ENV !== "production") {
-  dot.config();
-}
+dot.config();
 import express from "express";
 import path, {dirname} from "path";
 import { fileURLToPath } from "url";
