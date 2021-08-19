@@ -1,15 +1,19 @@
 import dot from "dotenv";
 dot.config();
+
 import express from "express";
 import path, {dirname} from "path";
 import { fileURLToPath } from "url";
 import ejsMate from "ejs-mate"
+import cors from "cors";
+
 import { db } from "./db/index.js";
 import morgan from "morgan"
 import chalk from "chalk"
 import flash from "connect-flash"
 import session from 'express-session'
 import { router } from "./routes/resume-route.js";
+
 const app = express()
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -28,6 +32,7 @@ app.use(express.json());
 
 app.use(express.urlencoded({extended:true}));
 app.use(morgan('tiny'));
+app.use(cors());
 
 const sessionConfig = {
   secret: "abcdefghijklmnopqrstuvwxyz",
@@ -52,11 +57,11 @@ app.use((req, res, next) => {
 });
 
 app.get('/home',(req,res)=>{
-  res.send()
+  res.send('jjjjj')
 })
 
 app.get('/', (req,res)=>{
-  res.render('index.ejs')
+  res.render('index')
 })
 
 app.use('/contact', router)
@@ -66,9 +71,8 @@ app.all('*', (req, res, next)=>{
 })
 
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("views/index");
 });
-
 
 app.use((err, req, res, next)=>{
   const { statusCode = 500 } = err;
