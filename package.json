@@ -8,7 +8,7 @@
     "node": "14.6.0"
   },
   "scripts": {
-    "start": "node app",
+    "start": "node run app",
     "dev": "nodemon app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
