@@ -15,7 +15,7 @@ import { router } from "./routes/resume-route.js";
 const app = express()
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
-
+import {ExpressError} from "./utils/expressError.js";
 // connect db
 db()
 
@@ -54,8 +54,8 @@ app.use((req, res, next) => {
 });
 
 
-app.get('/', async (req,res)=>{
-  await res.render('index')
+app.get('/', (req,res)=>{
+  res.render('index.ejs')
 })
 
 app.use('/contact', router)
