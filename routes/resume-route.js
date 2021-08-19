@@ -5,6 +5,9 @@ import { catchAsync } from "../utils/catchAsync.js";
 export const router = express.Router()
 
 router.route('/')
+.get((req, res) => {
+  res.render('index')
+})
 .post(catchAsync(async(req,res, next)=>{
   const {name, email, message} = req.body
   console.log(req.body);

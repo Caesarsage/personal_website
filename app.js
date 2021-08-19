@@ -54,7 +54,7 @@ app.use((req, res, next) => {
 });
 
 app.get('/home',(req,res)=>{
-  res.send('home')
+  res.send()
 })
 
 app.get('/', (req,res)=>{
@@ -66,6 +66,11 @@ app.use('/contact', router)
 app.all('*', (req, res, next)=>{ 
   next(new ExpressError('Page not found', 404))
 })
+
+app.get("/", (req, res) => {
+  res.render("index");
+});
+
 
 app.use((err, req, res, next)=>{
   const { statusCode = 500 } = err;
