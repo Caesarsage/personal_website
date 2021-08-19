@@ -53,6 +53,9 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get('/home',(req,res)=>{
+  res.send('home')
+})
 
 app.get('/', (req,res)=>{
   res.render('index.ejs')
