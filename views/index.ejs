@@ -13,7 +13,8 @@
   </div>
 
   <!-- Navbar -->
-  <nav id="nav" class="navbar navbar-expand-lg navbar-dark" data-spy="affix">
+<div class="wrapper">
+<nav id="nav" class="navbar navbar-expand-lg navbar-dark" data-spy="affix">
     <div class="container-fluid flex-column">
       <div class="nav-header">
         <a class="navbar-brand d-lg-none d-md-none" href="/">Destiny Erhabor Resume</a>
@@ -41,9 +42,9 @@
 
   <!-- Body content -->
 
-  <section class="body-intro" id="profile">
-    <div class="row">
-      <div class="container">
+  <section class="body-into bg-white" id="profile">
+    <div class="container">
+      <div class="">
         <h2 class="text-center">Profile</h2>
         <p class="lead text-center"><span id="app3"></span></p>
         <hr />
@@ -89,25 +90,23 @@
           </div>
         </div>
       </div>
+      <div class="stack text-center">
+        <h3>Core Stacks</h3>
+        <span class="badge btn-success mb-1">HTML</span>
+        <span class="badge btn-success mb-1">CSS</span>
+        <span class="badge btn-success mb-1">JAVASCRIPT</span>
+        <span class="badge btn-success mb-1">NODEJS</span>
+        <span class="badge btn-success mb-1">DevOps</span>
+        <span class="badge btn-success mb-1">PYTHON</span>
+      </div>
+      <section class="mt-1 text-center">
+        <h3>Project</h3>
+        <p class="lead">Trip to my Repository</p>
+        <a href="https://github.com/caesarsage" class="follow-button" data-show-count="false" data-size="large"
+          data-show-screen-name="false" target="_blank"> <i class="fa fa-github fa-2x"></i>
+        </a>
+      </section>
     </div>
-
-    <div class="stack ">
-      <h3>Core Stacks</h3>
-      <span class="badge btn-success mb-1">HTML</span>
-      <span class="badge btn-success mb-1">CSS</span>
-      <span class="badge btn-success mb-1">JAVASCRIPT</span>
-      <span class="badge btn-success mb-1">NODEJS</span>
-      <span class="badge btn-success mb-1">DevOps</span>
-      <span class="badge btn-success mb-1">PYTHON</span>
-    </div>
-    <section class="mt-1">
-      <h3>Project</h3>
-      <p class="lead">Trip to my Repository</p>
-      <a href="https://github.com/caesarsage" class="follow-button" data-show-count="false" data-size="large"
-        data-show-screen-name="false" target="_blank"> <i class="fa fa-github fa-2x"></i>
-      </a>
-    </section>
-
   </section>
 
 
@@ -415,8 +414,8 @@
 
       <hr />
 
-      <div class="row">
-        <div class="col-md-6 offset-md-3 mr-5 ml-3" data-aos="fade-left">
+      <div class="">
+        <div class="col-md-6  mr-5 ml-3" data-aos="fade-left">
           <form action="/contact" class="form form-group validated-form" novalidate method="POST">
             <div class="md-3">
               <label for="name" class="form-label">Your Name*</label>
@@ -450,3 +449,4 @@
 
     </div>
   </section>
+</div>
