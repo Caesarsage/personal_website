@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -24,6 +26,57 @@
   <script src="/javascript/bootstrap.min.js"></script>  
   <script src="/javascript/validate.js"></script>
   <script src="/javascript/scroll.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script>
+    AOS.init();
+
+    var app = document.getElementById('app');
+    var app2 = document.getElementById('app2');
+    
+    var typewriter = new Typewriter(app, {
+      loop: true,
+      delay: 75,
+    });
+    typewriter
+      .pauseFor(10)
+      .typeString('Destiny Erhabor')
+      .pauseFor(900)
+      .deleteChars(15)
+      .start();      
+
+    var typewriter = new Typewriter(app2, {
+      loop: true,
+      delay: 75,
+    });
+    typewriter
+      .pauseFor(900)
+      .typeString('Interactive Resume')
+      .pauseFor(300)
+      .deleteChars(10)
+      .start();
+
+
+    var app3 = document.getElementById('app3');
+
+    var typewriter = new Typewriter(app3, {
+      loop: true,
+      delay: 50,
+    });
+    typewriter
+      .pauseFor(1)
+      .typeString('I am a <strong style="color: #22a39f;">Creative Fullstack Web Developer</strong>')
+      .pauseFor(1)
+      .deleteChars(34)
+      .typeString('an <strong style="color: #22a39f;">Articulate Technical Writer</strong>')
+      .pauseFor(10)
+      .deleteChars(30)
+      .typeString('a <strong style="color: #22a39f;">Program Manager</strong>')
+      .pauseFor(1)
+      .start();
+  </script>
+
+  
 
 </body>
 </html>

@@ -1,9 +1,9 @@
 <% layout('layout/boilerplate') %>
 
-<div id="top" class="jumbotron bg-img">
+  <div id="top" class="jumbotron bg-img">
     <div class="container text-white">
-      <h1>Destiny Erhabor</h1>
-      <p class="lead">Interactive resume</p>
+      <h1 id="app"></h1>
+      <p class="lead" id="app2"></p>
     </div>
 
     <div class="overlay"></div>
@@ -45,10 +45,10 @@
     <div class="row">
       <div class="container">
         <h2 class="text-center">Profile</h2>
-        <p class="lead text-center">I'm a creative Fullstack Web Developer</p>
+        <p class="lead text-center"><span id="app3"></span></p>
         <hr />
         <div class="row text-left">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right">
             <h3>About me</h3>
             <p>
               I am an all round web developer. I am a programmer with good
@@ -60,42 +60,62 @@
               are better than one'.
             </p>
           </div>
-          <div class="col-md-4 text-center-sm">
+          <div class="col-md-4 text-center-sm" data-aos="fade-right">
             <img src="/me.jpeg" alt="Destiny Erhabor" class="img-fluid img" width="240" height="240" />
           </div>
-          <div class="text-start col-md-4">
+          <div class="text-start col-md-4 mt-sm-2" data-aos="fade-right">
             <h3>Details</h3>
-            <p>
+            <p class="lead text-left">
               <strong>Name:</strong><br />
               Destiny Erhabor<br />
               <strong>Location:</strong><br />
               Benin City, Nigeria, Earth
             </p>
-            <a href="https://twitter.com/caesar_sage" class="follow-button" data-show-count="false" data-size="large"
-              data-show-screen-name="false"> <i class="fa fa-twitter"></i> Follow @caesar_sage</a> <br/>
-              
             <a href="https://linkedin.com/in/destiny-erhabor" class="follow-button" data-show-count="false"
-              data-size="large" data-show-screen-name="false"> <i class="fa fa-linkedin"></i> Connect Destiny
-              Erhabor</a>
+              data-size="large" data-show-screen-name="false" target="_blank"> <i class="fa fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://caesarsage.hashnode.dev/" class="follow-button" data-show-count="false" data-size="large"
+              data-show-screen-name="false" target="_blank"> <img src="/hash.png" alt="hashnode"
+                style="width: 30px; margin-bottom: 14px;">
+            </a>
+            <a href="https://github.com/caesarsage" class="follow-button" data-show-count="false" data-size="large"
+              data-show-screen-name="false" target="_blank"> <i class="fa fa-github fa-2x"></i>
+            </a>
+            <a href="https://twitter.com/caesar_sage" class="follow-button" data-show-count="false" data-size="large"
+              data-show-screen-name="false" target="_blank"> <i class="fa fa-twitter fa-2x"></i>
+            </a>
+
 
           </div>
         </div>
-
       </div>
     </div>
 
-    <div class="stack mt-0 mb-1">
-      <h3 class="text-center">Core Stack(s)</h3>
+    <div class="stack ">
+      <h3>Core Stacks</h3>
+      <span class="badge btn-success mb-1">HTML</span>
+      <span class="badge btn-success mb-1">CSS</span>
+      <span class="badge btn-success mb-1">JAVASCRIPT</span>
+      <span class="badge btn-success mb-1">NODEJS</span>
+      <span class="badge btn-success mb-1">DevOps</span>
+      <span class="badge btn-success mb-1">PYTHON</span>
     </div>
-  </section>
+    <section class="mt-1">
+      <h3>Project</h3>
+      <p class="lead">Trip to my Repository</p>
+      <a href="https://github.com/caesarsage" class="follow-button" data-show-count="false" data-size="large"
+        data-show-screen-name="false" target="_blank"> <i class="fa fa-github fa-2x"></i>
+      </a>
+    </section>
 
+  </section>
 
 
 
   <!-- experience -->
   <section id="experiences" class="container">
     <h2 class="text-center">Experiences</h2>
-    <p class="lead">
+    <p class="lead" data-aos="fade-right">
       “Protons give an atom its identity, electrons its personality.”<br />-
       Bill Bryson, A short history of nearly everything
     </p>
@@ -106,14 +126,15 @@
 
     <div class="experiences">
       <div class="experience row">
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-right">
           <h4>University Of Benin</h4>
           <p class="experience-period">Jan 2016 - April 2022</p>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8" data-aos="fade-left">
           <p>
             <strong>Bachelor - Chemical Engineering </strong>
-            <span class="hidden-phone">
+            <span class="lead">
+
               Chemical Engineering is the application of principles of fundamental sciences, engineering, economics
               , computer technology and human relations to practical situations in field dealing with processes
               and equipment in wich matter is treated to produce something that is beneficial to the society.
@@ -129,15 +150,16 @@
       </div>
 
       <div class="experience row">
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-right">
           <h4>University Of Michigan </h4>
           <p class="experience-period">July 2020 - September 2020</p>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8" data-aos="fade-left">
           <p>
             <strong>Course - (Specialization:
               Web Design For Everybody)</strong>
-            <span class="hidden-phone">
+            <span class="lead">
+
               The education was mainly basic web Development, which covers how to write syntactically
               correct HTML5, and CSS3, how to create interactive web experience with Javascript. Mastering this
               range of technologies allowed me to develop high quality web sites that are responsive and browser
@@ -154,15 +176,16 @@
       </div>
 
       <div class="experience row">
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-right">
           <h4>GoodTalent </h4>
           <p class="experience-period">Jan 2020 - August 2020</p>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8" data-aos="fade-left">
           <p>
             <strong>Course - (Specialization:
               Fullstack)</strong>
-            <span class="hidden-phone">
+            <span class="lead">
+
               Graduate Training on Fullstack web technologies on HTML, CSS, BOOTSTRAP, JAVASCRIPT and NODEJS(Express JS)
               <span class="experience-details">
                 <span class="location">
@@ -177,12 +200,12 @@
       <div class="experience row">
         <h3>Certifications</h3>
         <ul class="list-group">
-          <li class="list-item">Microsoft Azure Fundamental (AZ-900)</li>
-          <li class="list-item">Microsoft AI Fundamental (AI-900)</li>
-          <li class="list-item">Beta Microsoft Learn Student Ambassador</li>
-          <li class="list-item">Common Purpose Open Source Leader</li>
-          <li class="list-item">Front-End Web UI Framework and Tools: Bootstrap 4</li>
-          <li class="list-item">Advance Styling with responsive Design</li>
+          <li class="list-item lead" data-aos="fade-right">Microsoft Azure Fundamental (AZ-900)</li>
+          <li class="list-item lead" data-aos="fade-right">Microsoft AI Fundamental (AI-900)</li>
+          <li class="list-item lead" data-aos="fade-right">Beta Microsoft Learn Student Ambassador</li>
+          <li class="list-item lead" data-aos="fade-right">Common Purpose Open Source Leader</li>
+          <li class="list-item lead" data-aos="fade-right">Front-End Web UI Framework and Tools: Bootstrap 4</li>
+          <li class="list-item lead" data-aos="fade-right">Advance Styling with responsive Design</li>
         </ul>
       </div>
     </div>
@@ -191,14 +214,15 @@
     <h3>Careers - Professional</h3>
 
     <div class="experience row">
-      <div class="col-md-4">
+      <div class="col-md-4" data-aos="fade-right">
         <h4>Zuri Team</h4>
         <p class="experience-period">Jan 2021 - July 2021</p>
       </div>
-      <div class="col-md-8">
+      <div data-aos="fade-left" class="col-md-8">
         <p>
           <strong>Internship</strong>
-          <span class="hidden-phone">
+          <span class="lead">
+
 
           </span>
           <span class="experience-details">
@@ -223,19 +247,22 @@
 
     <div class="experiences">
       <div class="experience row">
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-right">
           <h4>Coding Black Female (Black Codher) | Information Technology & Services</h4>
           <p class="experience-period">August 2021 - current</p>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8" data-aos="fade-left">
           <p>
             <strong>Part-time (Volunteer) - Fullstack Technical Mentor</strong>
-            <span class="hidden-phone">
-              Working
+            <span class="lead">
+              Programme for women who have an interest in getting into a tech career and the bootcamp will
+              empower individuals from the UK with the skills and knowledge to become web/mobile application developers.
+              <br /><br />
+              I Supports learners weekly either in groups or 1:1 on HTML, CSS, NODEJS AND REACT
             </span>
             <span class="experience-details">
               <span class="location">
-                <span class="fa fa-map-marker "></span>
+                <span class="fa fa-map-marker"></span>
                 United State
               </span>
 
@@ -250,15 +277,21 @@
       </div>
 
       <div class="experience row">
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-right">
           <h4>Andela (Google Africa Developer)| Information Technology & Services </h4>
           <p class="experience-period">July 2020 - current</p>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8" data-aos="fade-left">
           <p>
             <strong>Part-time (Volunteer) - Fullstack Mobile web Mentor</strong>
-            <span class="hidden-phone">
-              .
+            <span class="lead">
+              In Andela, Grow with Google, and Pluralsight partnership to support software developers across Africa in
+              three different tracks, Associate Android Developer, Associate Cloud Engineer, and Mobile Web Specialist
+              through the Google Africa Developer Scholarship 2021.
+              <br />
+              I volunteered to train scholars and participants on the Mobile Web track.
+              <li class="lead">help mentee finish their learning path with great understanding</li>
+              <li class="lead">guide mentee with any issue towards learning and building.</li>
             </span>
             <span class="experience-details">
               <span class="location">
@@ -277,14 +310,27 @@
       </div>
 
       <div class="experience row">
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-right">
           <h4>Student's Finance Club, University Of Benin | Financial Services</h4>
           <p class="experience-period">March 2021 - current</p>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8" data-aos="fade-left">
           <p>
             <strong>Part-time (Volunteer) - Technology Division Lead</strong>
-            <span class="hidden-phone">
+
+            <span class="lead">
+              <li class="lead">Managing our social media accounts.</li>
+              <li class="lead">Manage our future website.</li>
+              <li class="lead">Hold informational sessions with members of the Tech division and the group at large on
+                how to break into
+                the tech industry.</li>
+              <li class="lead">Organize learning sessions for your division members that will harness their Tech skills
+                to better
+                position them for Tech opportunities.</li>
+              <li class="lead">Be on the lookout for Tech opportunities for members to leverage.</li>
+              <li class="lead">Building the division in capacity and manpower, keeping track of your members and making
+                sure your members
+                are up to date with information.</li>
             </span>
             <span class="experience-details">
               <span class="location">
@@ -303,14 +349,25 @@
       </div>
 
       <div class="experience row">
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-right">
           <h4>Andela (ALC-MICROSOFT4Afrika)| Information Technology & Services</h4>
           <p class="experience-period">March 2021 - August 2021</p>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8" data-aos="fade-left">
           <p>
             <strong>Part-time (Volunteer) - Cloud Training Mentor</strong>
-            <span class="hidden-phone">
+            <span class="lead">
+
+              Training Mentor For ALC-MICROSOFT4Afrika Scholarship Program on the following learning path
+              <li class="lead"> AI-900 at learning phase 1</li>
+              <li class="lead">AZ-204 at leaning phase 2</li>
+
+              <li class="lead">Assigned to a number of mentees. I guided them in understanding the Microsoft Learn Docs
+                learning
+                website
+                for the learning paths above and resolving any problems they might face along the way.</li>
+              <li class="lead">Also mentor them to successfully taking their certification exams.</li>
+              <li class="lead">Solve their issues and carry out pair to pair learning for those confused</li>
 
             </span>
             <span class="experience-details">
@@ -331,25 +388,27 @@
 
       <hr />
       <h3>Career - Leadership Experience</h3>
-      <div class="experience row">
+      <div class="experience row lead">
         <ul class="list-group">
-          <li class="list-item">Organizer, Power Platform Bootcamp, Microsoft Learn Student Ambassador Nigeria </li>
-          <li class="list-item">Director Of Membership, Junior Chamber International Nigeria, University Of Benin (2021)
+          <li class="list-item" data-aos="fade-right">Organizer, Power Platform Bootcamp, Microsoft Learn Student
+            Ambassador Nigeria </li>
+          <li class="list-item" data-aos="fade-right">Director Of Membership, Junior Chamber International Nigeria,
+            University Of Benin (2021)
           </li>
-          <li class="list-item">Organizer, Power Platform Bootcamp, Edo State(2021)</li>
-          <li class="list-item">Trainer, Web Developer Bootcamp,SFC University of Benin(2021)</li>
-          <li class="list-item">Mentor, Microsoft Learn Student Ambassador Mixed Reality's Bootcamp, (2020)</li>
-          <li class="list-item">Ambassador, Microsoft Learn Student Community Nigeria(2020)</li>
+          <li class="list-item" data-aos="fade-right">Organizer, Power Platform Bootcamp, Edo State(2021)</li>
+          <li class="list-item" data-aos="fade-right">Trainer, Web Developer Bootcamp,SFC University of Benin(2021)</li>
+          <li class="list-item" data-aos="fade-right">Mentor, Microsoft Learn Student Ambassador Mixed Reality's
+            Bootcamp, (2020)</li>
+          <li class="list-item" data-aos="fade-right">Ambassador, Microsoft Learn Student Community Nigeria(2020)</li>
         </ul>
       </div>
     </div>
-
   </section>
 
   <section class="bg-white">
-    <div id="contact" class="">
+    <div id="contact">
       <h2>Contact</h2>
-      <p class="lead">
+      <p class="lead" data-aos="fade-right">
         “If I had asked people what they wanted, they would have said faster
         horses. ”<br />- Henry Ford
       </p>
@@ -357,8 +416,8 @@
       <hr />
 
       <div class="row">
-        <div class="col-md-6 offset-md-3 mr-5 ml-3">
-          <form action="/contact"  class="form form-group validated-form" novalidate method="POST">
+        <div class="col-md-6 offset-md-3 mr-5 ml-3" data-aos="fade-left">
+          <form action="/contact" class="form form-group validated-form" novalidate method="POST">
             <div class="md-3">
               <label for="name" class="form-label">Your Name*</label>
               <input type="text" id="name" name="name" class="form-control" aria-placeholder="name" required>
@@ -380,8 +439,8 @@
                 Looks good!
               </div>
             </div>
-             <div class="my-3">
-                <button type="submit" class="btn btn-success">submit</button>
+            <div class="my-3">
+              <button type="submit" class="btn btn-success">submit</button>
             </div>
           </form>
         </div>
@@ -389,8 +448,5 @@
 
       <hr />
 
-      <div class="text-center">
-
-      </div>
     </div>
   </section>

@@ -55,13 +55,24 @@ h2 {
   display: block;
   margin-top: 6px;
 }
+.follow-button{
+  border-radius: 50%;
+  border: 2px solid #22a39f;
+  padding: 18px 10px 10px;
+  margin-right: 1em;
 
+}
+.follow-button:hover,
+.follow-button:focus{
+  background-color: #222222;
+  transition: all ease-out 5s;
+}
 .bg-img {
   background: url("/typing-tech.gif") no-repeat top center fixed;
   -webkit-background-size: cover;
   background-size: cover;
   height: 100vh;
-  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .jumbotron .overlay {
   background-color: #22a39f;
