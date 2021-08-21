@@ -168,7 +168,7 @@ p.lead {
 
 .navbar {
   border: 0px;
-  background-color: #222222;
+  background-color: #22a39f;
   margin-top: 1em;
   height: fit-content;
   /* position: absolute !important; */
@@ -248,15 +248,15 @@ nav {
   transform: rotate(90deg);
 }
 .nav-link {
-  color: gray;
+  color: #ffffff!important;
   font-size: 1rem;
   text-transform: capitalize;
   transition: all 0.3s linear;
 }
 
 .nav-link:hover {
-  background: #22a39f;
-  color: #ffffff;
+  background: #f3efe0;
+  color: #22a39f!important;
   transition: all 0.3s linear;
 }
 @media screen and (min-width: 800px) {
