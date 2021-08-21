@@ -84,7 +84,7 @@ app.use((err, req, res, next)=>{
 });
 
 // Connection
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3001
 
 app.listen(port, ()=>{
   console.log(`listing at port ${chalk.green(port)}`)
