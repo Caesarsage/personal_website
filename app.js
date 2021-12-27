@@ -10,9 +10,6 @@ import cors from "cors";
 import { db } from "./db/index.js";
 import morgan from "morgan"
 import chalk from "chalk"
-import flash from "connect-flash"
-import session from 'express-session'
-import { router } from "./routes/resume-route.js";
 
 const app = express()
 const __filename = fileURLToPath(import.meta.url)
@@ -34,27 +31,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(morgan('tiny'));
 app.use(cors());
 
-const sessionConfig = {
-  secret: "abcdefghijklmnopqrstuvwxyz",
-  resave: false,
-  saveUninitialized: true,
-  cookie: {
-    httpOnly: true,
-    expires: Date.now() + 1000 * 60 * 60 * 24 * 7,
-    maxAge: 1000 * 60 * 60 * 24 * 7,
-  },
-};
-app.use(session(sessionConfig));
 
-// FLASH CONFIG
-app.use(flash());
-// locals: available to the template
-// must be after express session  and passport config
-app.use((req, res, next) => {
-  res.locals.success = req.flash("success");
-  res.locals.error = req.flash("error");
-  next();
-});
 
 app.get('/home',(req,res)=>{
   res.send('jjjjj')
@@ -64,7 +41,6 @@ app.get('/', (req,res)=>{
   res.render('index')
 })
 
-app.use('/contact', router)
 
 app.all('*', (req, res, next)=>{ 
   next(new ExpressError('Page not found', 404))
