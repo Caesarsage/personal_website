@@ -7,7 +7,7 @@ import { fileURLToPath } from "url";
 import ejsMate from "ejs-mate"
 import cors from "cors";
 
-import { db } from "./db/index.js";
+// import { db } from "./db/index.js";
 import morgan from "morgan"
 import chalk from "chalk"
 
@@ -16,7 +16,7 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 import {ExpressError} from "./utils/expressError.js";
 // connect db
-db()
+// db()
 
 // middleware
 app.engine('ejs', ejsMate)
