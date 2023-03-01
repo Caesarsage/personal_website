@@ -1,25 +1,34 @@
 <% layout('layout/boilerplate') %>
 
-  <div id="top" class="jumbotron bg-img">
-    <div class="container text-white">
-      <h1 id="app"></h1>
-      <p class="lead" id="app2"></p>
-    </div>
-
-    <div class="overlay"></div>
-    <a href="#profile" class="scroll-down">
-      <span style="color: white;" class="fa fa-arrow-down fa-4x"></span>
-    </a>
+<div id="top" class="jumbotron bg-img">
+  <div class="container text-white">
+    <h1 id="app"></h1>
+    <p class="lead" id="app2"></p>
   </div>
 
-  <!-- Navbar -->
+  <div class="overlay"></div>
+  <a href="#profile" class="scroll-down">
+    <span style="color: white" class="fa fa-arrow-down fa-4x"></span>
+  </a>
+</div>
+
+<!-- Navbar -->
 <div class="wrapper">
-<nav id="nav" class="navbar navbar-expand-lg navbar-dark" data-spy="affix">
+  <nav id="nav" class="navbar navbar-expand-lg navbar-dark" data-spy="affix">
     <div class="container-fluid flex-column">
       <div class="nav-header">
-        <a class="navbar-brand d-lg-none d-md-none" href="/">Destiny Erhabor Portfolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcola"
-          aria-controls="navcola" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand d-lg-none d-md-none" href="/"
+          >Destiny Erhabor Portfolio</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navcola"
+          aria-controls="navcola"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="nav-toggle navbar-toggler-icon navbar-dark"></span>
         </button>
       </div>
@@ -27,24 +36,26 @@
         <ul class="navbar-nav mb-lg-0 flex-column">
           <li class="nav-item">
             <a class="nav-link" href="#profile">Profile</a>
-          <li>
+          </li>
+
+          <li></li>
           <li class="nav-item">
             <a class="nav-link" href="#experiences">Experience</a>
-          <li>
+          </li>
+
+          <li></li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
     </div>
-
   </nav>
 
   <!-- Body content -->
 
   <section class="text-center" id="profile">
-    <h1>Welcome ... </h1>
-    <!-- <div class="container">
+    <div class="container">
       <div class="">
         <h2 class="text-center">Profile</h2>
         <p class="lead text-center"><span id="app3"></span></p>
@@ -53,45 +64,64 @@
           <div class="col-md-4" data-aos="fade-right">
             <h3>About me</h3>
             <p>
-              I am an all round web developer. I am a programmer with good
-              knowledge of front-end, back-end, database and cloud techniques.
-              I love structure and order and
-              I also stand for quality. I love spending time on fixing little
-              details and optimizing web apps. Also I like working in a team,
-              you'll learn faster and much more. As the saying goes: 'two heads
-              are better than one'.
+              I am a software developer with a passion for building scalable and
+              maintainable software. I write technical articles for web and cloud communities.
             </p>
           </div>
           <div class="col-md-4 text-center-sm" data-aos="fade-right">
-            <img src="/me.jpeg" alt="Destiny Erhabor" class="img-fluid img" width="240" height="240" />
+            <img
+              src="/me.jpg"
+              alt="Destiny"
+              class="img-fluid img"
+              width="240"
+              height="240"
+            />
           </div>
           <div class="text-start col-md-4 mt-sm-2" data-aos="fade-right">
-            <h3>Details</h3>
+            <h3 class="text-left">Details</h3>
             <p class="lead text-left">
               <strong>Name:</strong><br />
               Destiny Erhabor<br />
               <strong>Location:</strong><br />
-              Benin City, Nigeria, Earth
+              Earth
             </p>
-            <a href="https://linkedin.com/in/destiny-erhabor" class="follow-button" data-show-count="false"
-              data-size="large" data-show-screen-name="false" target="_blank"> <i class="fa fa-linkedin fa-2x"></i>
-            </a>
-            <a href="https://caesarsage.hashnode.dev/" class="follow-button" data-show-count="false" data-size="large"
-              data-show-screen-name="false" target="_blank"> <img src="/hash.png" alt="hashnode"
-                style="width: 30px; margin-bottom: 14px;">
-            </a>
-            <a href="https://github.com/caesarsage" class="follow-button" data-show-count="false" data-size="large"
-              data-show-screen-name="false" target="_blank"> <i class="fa fa-github fa-2x"></i>
-            </a>
-            <a href="https://twitter.com/caesar_sage" class="follow-button" data-show-count="false" data-size="large"
-              data-show-screen-name="false" target="_blank"> <i class="fa fa-twitter fa-2x"></i>
-            </a>
-
-
+            <div class="d-flex">
+              <a
+                href="https://linkedin.com/in/destiny-erhabor"
+                class="follow-button"
+                data-show-count="false"
+                data-size="small"
+                data-show-screen-name="false"
+                target="_blank"
+              >
+                <i class="fa fa-linkedin fa-2x"></i>
+              </a>
+              </a>
+              <a
+                href="https://github.com/caesarsage"
+                class="follow-button"
+                data-show-count="false"
+                data-size="small"
+                data-show-screen-name="false"
+                target="_blank"
+              >
+                <i class="fa fa-github fa-2x"></i>
+              </a>
+              <a
+                href="https://twitter.com/caesar_sage"
+                class="follow-button"
+                data-show-count="false"
+                data-size="small"
+                data-show-screen-name="false"
+                target="_blank"
+              >
+                <i class="fa fa-twitter fa-2x"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="stack text-center">
+      <!-- <div class="stack text-center">
         <h3>Core Stacks</h3>
         <span class="badge btn-success mb-1">HTML</span>
         <span class="badge btn-success mb-1">CSS</span>
@@ -99,18 +129,16 @@
         <span class="badge btn-success mb-1">NODEJS</span>
         <span class="badge btn-success mb-1">DevOps</span>
         <span class="badge btn-success mb-1">PYTHON</span>
-      </div>
-      <section class="mt-1 text-center">
+      </div> -->
+      <!-- <section class="mt-1 text-center">
         <h3>Project</h3>
         <p class="lead">Trip to my Repository</p>
         <a href="https://github.com/caesarsage" class="follow-button" data-show-count="false" data-size="large"
           data-show-screen-name="false" target="_blank"> <i class="fa fa-github fa-2x"></i>
         </a>
-      </section>
-    </div> -->
+      </section> -->
+    </div>
   </section>
-
-
 
   <!-- experience -->
   <!-- <section id="experiences" class="container">

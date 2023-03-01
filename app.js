@@ -31,12 +31,6 @@ app.use(express.urlencoded({extended:true}));
 app.use(morgan('tiny'));
 app.use(cors());
 
-
-
-app.get('/home',(req,res)=>{
-  res.send('jjjjj')
-})
-
 app.get('/', (req,res)=>{
   res.render('index')
 })
