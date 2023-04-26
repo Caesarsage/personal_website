@@ -1,81 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/styles.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
-  <title>Destiny Erhabor's Online Portfolio</title>
-</head>
-<body class="d-flex flex-column vh-100" data-target="#navbar-example" tabindex="0">
-  <main class="bg-color">   
-    <%- body %> 
-  </main>
-   <%- include('../partials/footer') %>
-  <script src="/javascript/bootstrap.min.js"></script>  
-  <script src="/javascript/validate.js"></script>
-  <script src="/javascript/scroll.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-  <script>
-    AOS.init();
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="/css-old/bootstrap.min.css">
+    <link rel="stylesheet" href="/css-old/font-awesome.min.css">
+    <link rel="stylesheet" href="/css-old/styles.css"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    var app = document.getElementById('app');
-    var app2 = document.getElementById('app2');
-    
-    var typewriter = new Typewriter(app, {
-      loop: true,
-      delay: 75,
-    });
-    typewriter
-      .pauseFor(10)
-      .typeString('Destiny Erhabor')
-      .pauseFor(900)
-      .deleteChars(15)
-      .start();      
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-    var typewriter = new Typewriter(app2, {
-      loop: true,
-      delay: 75,
-    });
-    typewriter
-      .pauseFor(900)
-      .typeString('Interactive Portfolio')
-      .pauseFor(300)
-      .deleteChars(10)
-      .start();
+    <!-- Facebook and Twitter integration -->
+    <!-- <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" /> -->
 
+    <link
+      href="https://fonts.googleapis.com/css?family=Space+Mono"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script"
+      rel="stylesheet"
+    />
 
-    var app3 = document.getElementById('app3');
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="/css/animate.css" />
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="/css/icomoon.css" />
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="/css/bootstrap.css" />
 
-    var typewriter = new Typewriter(app3, {
-      loop: true,
-      delay: 50,
-    });
-    typewriter
-      .pauseFor(1)
-      .typeString('I am a <strong style="color: #22a39f;">Software Developer</strong>')
-      .pauseFor(1)
-      .deleteChars(34)
-      .typeString('I am a <strong style="color: #22a39f;">Technical Writer</strong>')
-      .pauseFor(10)
-      .deleteChars(34)
-      .typeString('I am a <strong style="color: #22a39f;">Cloud Developer and Teacher</strong>')
-      .pauseFor(1)
-      .start();
-  </script>
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="/css/style.css" />
 
-  
+    <!-- Modernizr JS -->
+    <script src="/js/modernizr-2.6.2.min.js"></script>
 
-</body>
+    <title>Destiny Erhabor's Online Portfolio</title>
+  </head>
+  <body
+    class="d-flex flex-column vh-100"
+    data-target="#navbar-example"
+    tabindex="0"
+  >
+    <main class="bg-color"><%- body %></main>
+    <%- include('../partials/footer') %>
+    <script src="/javascript/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <!-- <script src="/javascript/validate.js"></script> -->
+    <!-- <script src="/javascript/scroll.js"></script> -->
+
+    <!-- jQuery -->
+    <script src="/js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="/js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <!-- Stellar Parallax -->
+    <script src="/js/jquery.stellar.min.js"></script>
+    <!-- Easy PieChart -->
+    <script src="/js/jquery.easypiechart.min.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+    <script src="/js/google_map.js"></script>
+
+    <!-- Main -->
+    <script src="/js/main.js"></script>
+
+    <script>
+      AOS.init();
+
+      var app = document.getElementById("app");
+      var app2 = document.getElementById("app2");
+
+      var typewriter = new Typewriter(app, {
+        loop: true,
+        delay: 75,
+      });
+      typewriter
+        .pauseFor(10)
+        .typeString("Destiny Erhabor")
+        .pauseFor(900)
+        .deleteChars(15)
+        .start();
+
+      var typewriter = new Typewriter(app2, {
+        loop: true,
+        delay: 75,
+      });
+      typewriter
+        .pauseFor(900)
+        .typeString("Interactive Portfolio")
+        .pauseFor(300)
+        .deleteChars(10)
+        .start();
+
+      var app3 = document.getElementById("app3");
+
+      var typewriter = new Typewriter(app3, {
+        loop: true,
+        delay: 50,
+      });
+      typewriter
+        .pauseFor(1)
+        .typeString(
+          '<strong style="color: #fff;">Software Developer</strong>'
+        )
+        .pauseFor(1)
+        .deleteChars(34)
+        .typeString(
+          '<strong style="color: #fff;">Cloud Developer</strong>'
+        )
+        .pauseFor(10)
+        .deleteChars(34)
+        .typeString(
+          '<strong style="color: #fff;">Technical Writer</strong>'
+        )
+        .pauseFor(1)
+        .start();
+    </script>
+  </body>
 </html>
