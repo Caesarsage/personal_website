@@ -1,7 +1,41 @@
 <% layout('layout/boilerplate') %>
 
   <div class="fh5co-loader"></div>
-  <div id="page">
+
+  <nav>
+    <a target="_blank" class="d-flex" aria-label="Open my resume" data-blobity-tooltip="View Resume"
+      data-blobity-magnetic="false" href=""><svg
+        aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf"
+        class="svg-inline--fa fa-file-pdf" role="img"
+        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path fill="currentColor"
+          d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V304H296 272 184 160c-35.3 0-64 28.7-64 64v80 48 16H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zM160 352h24c30.9 0 56 25.1 56 56s-25.1 56-56 56h-8v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V448 368c0-8.8 7.2-16 16-16zm24 80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-8v48h8zm88-80h24c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H272c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm24 128c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16h-8v96h8zm72-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H400v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H400v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V432 368z">
+        </path>
+      </svg>
+    </a>
+    <!-- <a data-blobity-magnetic="false" aria-label="Scroll to Home Section" href="#">
+      <h4>Home</h4>
+    </a> -->
+    <a data-blobity-magnetic="false" aria-label="Scroll to About Section" href="#fh5co-about">
+      <h4>About</h4>
+    </a>
+    <!-- <a data-blobity-magnetic="false" aria-label="Scroll to Contact Section" href="#fh5co-skills">
+      <h4>Skills</h4>
+    </a> -->
+    <a data-blobity-magnetic="false" aria-label="Scroll to Contact Section" href="#fh5co-skills">
+      <h4>Work</h4>
+    </a>
+    <a data-blobity-magnetic="false" aria-label="Scroll to Contact Section" href="#fh5co-blog">
+      <h4>Blogs</h4>
+    </a>
+    <a data-blobity-magnetic="false" aria-label="Scroll to Contact Section" href="#fh5co-started">
+      <h4>Contact</h4>
+    </a>
+    <!-- <a data-blobity-magnetic="false" aria-label="Scroll to Contact Section" href="#fh5co-consult">
+      <h4>Contact</h4>
+    </a> -->
+  </nav>
+  <div id="page" style="position: relative;">
     <!-- Navbar -->
     <header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner"
       style="background-image:url(/typing-tech.gif);" data-stellar-background-ratio="0.5">
@@ -31,24 +65,19 @@
       </div>
     </header>
 
+    <div id="fh5co-resume">
+      <div>
+        <a target="_blank" aria-label="View Resume" href="">
+          <button style="opacity: 1;">
+            VIEW RESUME
+          </button>
+        </a>
+      </div>
+    </div>
+
     <div id="fh5co-about" class="animate-box">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-            <h2>About Me</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <ul class="info">
-              <li><span class="first-block">Full Name:</span><span class="second-block">Destiny Erhabor</span></li>
-              <li><span class="first-block">Phone:</span><span class="second-block">+ 234 8170 5524 38</span></li>
-              <li><span class="first-block">Email:</span><span class="second-block">destinyerhabor6@gmail.com</span>
-              </li>
-              <li><span class="first-block">Website:</span><span class="second-block">destinyerhabor.tech</span></li>
-              <li><span class="first-block">Address:</span><span class="second-block">Nigeria</span></li>
-            </ul>
-          </div>
           <div class="col-md-8">
             <h2>Hello There!</h2>
             <p>
@@ -66,103 +95,6 @@
               <li><a href="https://github.com/caesarsage" target="_blank"><i class="icon-github"></i></a></li>
             </ul>
             </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="fh5co-resume" class="fh5co-bg-color">
-      <div class="container">
-        <div class="row animate-box">
-          <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-            <h2>My Resume</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 col-md-offset-0">
-            <ul class="timeline">
-              <li class="timeline-heading text-center animate-box">
-                <div>
-                  <h3>Work Experience</h3>
-                </div>
-              </li>
-              <li class="animate-box timeline-unverted">
-                <div class="timeline-badge"><i class="icon-suitcase"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h3 class="timeline-title">Software Developer</h3>
-                    <span class="company">Oris Consulting - 2022 - Current</span>
-                  </div>
-                  <div class="timeline-body">
-                    <p> Designing, developing, and maintaining the backend infrastructure to ensure optimal performance.
-                    </p> <br />
-                    <p> Implementing new features that align with the company's goals and missions to increase product
-                      ny 60% increase in user engagement and a 50% increase in overall revenue</p><br />
-                    <p> Cloud server maintenance ensuring that the cloud servers are running smoothly and handle any
-                      issues that may arise.</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted animate-box">
-                <div class="timeline-badge"><i class="icon-suitcase"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h3 class="timeline-title">Junior Developer</h3>
-                    <span class="company">Company Name - 2013 - 2015</span>
-                  </div>
-                  <!-- <div class="timeline-body">
-                    <p>Far far away, behind the word mountains, they live in Bookmarksgrove right at the coast of the
-                      Semantics, a large language ocean.</p>
-                  </div> -->
-                </div>
-              </li>
-              <li class="animate-box timeline-unverted">
-                <div class="timeline-badge"><i class="icon-suitcase"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h3 class="timeline-title">UI/UX Designer</h3>
-                    <span class="company">Company Name - 2010 - 2012</span>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                      live the blind texts.</p>
-                  </div>
-                </div>
-              </li>
-
-              <br>
-              <li class="timeline-heading text-center animate-box">
-                <div>
-                  <h3>Education</h3>
-                </div>
-              </li>
-              <li class="animate-box timeline-unverted">
-                <div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h3 class="timeline-title">Bachelors Degree</h3>
-                    <span class="company">University Of Benin - 2016 - 2023</span>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                      live the blind texts.</p>
-                  </div>
-                </div>
-              </li>
-              <li class="animate-box timeline-inverted">
-                <div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h3 class="timeline-title">Graduation</h3>
-                    <span class="company">Niger College - 2010 - 2015</span>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                      live the blind texts.</p>
-                  </div>
-                </div>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
@@ -229,7 +161,7 @@
                 </span>
                 <div class="feature-copy">
                   <h3>Support</h3>
-                  
+
                 </div>
               </div>
             </div>
@@ -246,24 +178,57 @@
           </div>
         </div>
         <div class="row">
-          <img src="https://img.shields.io/badge/JavaScript-JS-informational?style=flat&logo=javascript&logoColor=white&color=2bbc8a" alt="JavaScript JS">
-          <img src="https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=2bbc8a" alt="Code Python">
-          <img src="https://img.shields.io/badge/Typescript-TS-informational?style=flat&logo=typescript&logoColor=white&color=2bbc8a" alt="Typescript TS">
-          <img src="https://img.shields.io/badge/Backend-NestJS-informational?style=flat&logo=Nestjs&logoColor=white&color=2bbc8a" alt="Backend NestJS">
-          <img src="https://img.shields.io/badge/Backend-ExpressJS-informational?style=flat&logo=ExpressJs&logoColor=white&color=2bbc8a" alt="Backend ExpressJS">
-          <img src="https://img.shields.io/badge/Backend-Flask-informational?style=flat&logo=flask&logoColor=white&color=2bbc8a" alt="Backend Flask">
-          <img src="https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=2bbc8a" alt="Code Python">
-          <img src="https://img.shields.io/badge/Database-SQL-informational?style=flat&logo=sql&logoColor=white&color=2bbc8a" alt="Database SQL">
-          <img src="https://img.shields.io/badge/Database-MongoDB/Mongoose-informational?style=flat&logo=mongodb&logoColor=white&color=2bbc8a" alt="Database MongoDB/Mongoose">
-          <img src="https://img.shields.io/badge/Cloud-AWS-informational?style=flat&logo=amazon-aws&logoColor=white&color=2bbc8a" alt="Cloud AWS">
-          <img src="https://img.shields.io/badge/Cloud-Azure-informational?style=flat&logo=azure&logoColor=white&color=2bbc8a" alt="Cloud Azure">
-          <img src="https://img.shields.io/badge/VCS-Git-informational?style=flat&logo=git&logoColor=white&color=2bbc8a" alt="VCS Git">
-          <img src="https://img.shields.io/badge/Hub-Github-informational?style=flat&logo=github&logoColor=white&color=2bbc8a" alt="Hub Github">
-          <img src="https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=2bbc8a" alt="OS Linux">
-          <img src="https://img.shields.io/badge/Linux-Ubuntu-informational?style=flat&logo=ubuntu&logoColor=white&color=2bbc8a" alt="Linux Ubuntu">
-          <img src="https://img.shields.io/badge/Shell-Bash-informational?style=flat&logo=gnu-bash&logoColor=white&color=2bbc8a" alt="Shell Bash">
-          <img src="https://img.shields.io/badge/IaC-CloudFormation-informational?style=flat&logo=Cloudformation&logoColor=white&color=2bbc8a" alt="IaC">          
-        </div> 
+          <img
+            src="https://img.shields.io/badge/JavaScript-JS-informational?style=flat&logo=javascript&logoColor=white&color=black"
+            alt="JavaScript JS">
+          <img
+            src="https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=black"
+            alt="Code Python">
+          <img
+            src="https://img.shields.io/badge/Typescript-TS-informational?style=flat&logo=typescript&logoColor=white&color=black"
+            alt="Typescript TS">
+          <img
+            src="https://img.shields.io/badge/Backend-NestJS-informational?style=flat&logo=Nestjs&logoColor=white&color=black"
+            alt="Backend NestJS">
+          <img
+            src="https://img.shields.io/badge/Backend-ExpressJS-informational?style=flat&logo=ExpressJs&logoColor=white&color=black"
+            alt="Backend ExpressJS">
+          <img
+            src="https://img.shields.io/badge/Backend-Flask-informational?style=flat&logo=flask&logoColor=white&color=black"
+            alt="Backend Flask">
+          <img
+            src="https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=black"
+            alt="Code Python">
+          <img
+            src="https://img.shields.io/badge/Database-SQL-informational?style=flat&logo=sql&logoColor=white&color=black"
+            alt="Database SQL">
+          <img
+            src="https://img.shields.io/badge/Database-MongoDB/Mongoose-informational?style=flat&logo=mongodb&logoColor=white&color=black"
+            alt="Database MongoDB/Mongoose">
+          <img
+            src="https://img.shields.io/badge/Cloud-AWS-informational?style=flat&logo=amazon-aws&logoColor=white&color=black"
+            alt="Cloud AWS">
+          <img
+            src="https://img.shields.io/badge/Cloud-Azure-informational?style=flat&logo=azure&logoColor=white&color=black"
+            alt="Cloud Azure">
+          <img src="https://img.shields.io/badge/VCS-Git-informational?style=flat&logo=git&logoColor=white&color=black"
+            alt="VCS Git">
+          <img
+            src="https://img.shields.io/badge/Hub-Github-informational?style=flat&logo=github&logoColor=white&color=black"
+            alt="Hub Github">
+          <img
+            src="https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=black"
+            alt="OS Linux">
+          <img
+            src="https://img.shields.io/badge/Linux-Ubuntu-informational?style=flat&logo=ubuntu&logoColor=white&color=black"
+            alt="Linux Ubuntu">
+          <img
+            src="https://img.shields.io/badge/Shell-Bash-informational?style=flat&logo=gnu-bash&logoColor=white&color=black"
+            alt="Shell Bash">
+          <img
+            src="https://img.shields.io/badge/IaC-CloudFormation-informational?style=flat&logo=Cloudformation&logoColor=white&color=black"
+            alt="IaC">
+        </div>
       </div>
     </div>
 
@@ -532,7 +497,10 @@
           <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
             <h2>Hire Me!</h2>
             <p>
-              I am a professional with a passion for technology and problem-solving. I offer high-quality services in web design, cloud engineering, technical writing, web development, teaching, and technical support. My goal is to provide cost-effective solutions that help you achieve your business objectives. Let's discuss your project needs today.            </p>
+              I am a professional with a passion for technology and problem-solving. I offer high-quality services in
+              web design, cloud engineering, technical writing, web development, teaching, and technical support. My
+              goal is to provide cost-effective solutions that help you achieve your business objectives. Let's discuss
+              your project needs today. </p>
             <p><a href="#" class="btn btn-default btn-lg">Contact Me</a></p>
           </div>
         </div>
