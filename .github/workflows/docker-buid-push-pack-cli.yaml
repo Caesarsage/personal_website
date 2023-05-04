@@ -61,7 +61,7 @@ jobs:
       - name: Pack Remote Build
         uses: dfreilich/pack-action@v2.1.1
         with:
-          args: 'build ${{ env.IMG_NAME }} --builder ${{ env.BUILDER }} --path ${{ env.TEST_APP_PATH }} --publish'
+          args: 'build ${{ env.IMG_NAME }} --builder ${{ env.BUILDER }} --publish'
 
       - name: Test App
         run: |
