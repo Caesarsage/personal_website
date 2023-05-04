@@ -15,8 +15,6 @@ env:
 jobs:
   version:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
 
   # local_build:
   #   runs-on: ubuntu-latest
@@ -47,7 +45,9 @@ jobs:
   dockerhub_remote_build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v2
+        
       - name: Set App Name
         run: 'echo "IMG_NAME=$(echo ${USERNAME})/$(echo ${IMG_NAME})" >> $GITHUB_ENV'
 
@@ -69,7 +69,7 @@ jobs:
           curl --request GET --url http://localhost:8080
 
       - name: Pack Rebase
-        uses: dfreilich/pack-action@v2
+        uses: dfreilich/pack-action@v2 dfreilich/pack-action@v2
         with:
           args: 'rebase ${{ env.IMG_NAME }}'
 
