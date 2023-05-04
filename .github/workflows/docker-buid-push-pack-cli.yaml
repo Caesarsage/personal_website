@@ -8,7 +8,7 @@ on:
     branches:
       - main
 env:
-  BUILDER: "'ghcr.io/dfreilich/paketobuildpacks/builder:tiny'"
+  BUILDER: "heroku/builder:22"
   IMG_NAME: 'personal-portfolio'
   USERNAME: "caesarsage"
 
