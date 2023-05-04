@@ -2,22 +2,19 @@ name: Docker build and Publish with pack-cli locally and remote
 
 on:
   push:
-    branches:
-      - main
     paths-ignore:
       - '**.md'
       - 'resources/**'
-      - 'CODEOWNERS'
       - 'LICENSE'
+    branches:
+      - main
   pull_request_target:
-    branches:
-      - main
     paths-ignore:
       - '**.md'
       - 'resources/**'
-      - 'CODEOWNERS'
       - 'LICENSE'
- 
+    branches:
+      - main
 env:
   BUILDER: "heroku/builder:22"
   IMG_NAME: 'personal-portfolio'
