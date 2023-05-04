@@ -4,9 +4,20 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - '**.md'
+      - 'resources/**'
+      - 'CODEOWNERS'
+      - 'LICENSE'
   pull_request_target:
     branches:
       - main
+    paths-ignore:
+      - '**.md'
+      - 'resources/**'
+      - 'CODEOWNERS'
+      - 'LICENSE'
+ 
 env:
   BUILDER: "heroku/builder:22"
   IMG_NAME: 'personal-portfolio'

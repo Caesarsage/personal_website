@@ -134,6 +134,9 @@ dockerhub_remote_build:
 ## Full Workflow
 > To see the full workflow, check the [main-pack-cli.yaml.yml](.github/workflows/main-pack-cli.yaml.yml) file in the .github/workflows directory.
 
+## Image on Docker Hub
+![Image on Docker Hub](public/images/docker-hub.png)
+
 ## Conclusion
 
 This workflow shows you how to build and publish Docker images with pack-cli locally and remotely without writing Dockerfiles. It also shows you how to use the pack-cli tool to inspect Docker images and rebase them to make sure they are reproducible.
