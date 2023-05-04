@@ -17,9 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: ./
-        with:
-          args: 'version'
 
   # local_build:
   #   runs-on: ubuntu-latest
