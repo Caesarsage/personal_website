@@ -15,13 +15,15 @@ env:
 jobs:
   version:
     runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
 
   # local_build:
   #   runs-on: ubuntu-latest
   #   steps:
   #     - uses: actions/checkout@v3
   #     - name: Pack Build
-  #       uses: dfreilich/pack-action@v2
+  #       uses: dfreilich/pack-action@v2.1.1
   #       with:
   #         args: 'build test_img --builder ${{ env.BUILDER }} --path ${{ env.TEST_APP_PATH }}'
   #     - name: Test App
@@ -31,11 +33,11 @@ jobs:
   #         sleep 30s
   #         curl --request GET --url http://localhost:8080
   #     - name: Pack Rebase
-  #       uses: dfreilich/pack-action@v2
+  #       uses: dfreilich/pack-action@v2.1.1
   #       with:
   #         args: 'rebase test_img'
   #     - name: Inspect Image
-  #       uses: dfreilich/pack-action@v2
+  #       uses: dfreilich/pack-action@v2.1.1
   #       with:
   #         args: 'inspect-image test_img'
   #     - name: Clean Up
@@ -45,8 +47,7 @@ jobs:
   dockerhub_remote_build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
         
       - name: Set App Name
         run: 'echo "IMG_NAME=$(echo ${USERNAME})/$(echo ${IMG_NAME})" >> $GITHUB_ENV'
@@ -58,7 +59,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Pack Remote Build
-        uses: dfreilich/pack-action@v2
+        uses: dfreilich/pack-action@v2.1.1
         with:
           args: 'build ${{ env.IMG_NAME }} --builder ${{ env.BUILDER }} --path ${{ env.TEST_APP_PATH }} --publish'
 
@@ -69,12 +70,12 @@ jobs:
           curl --request GET --url http://localhost:8080
 
       - name: Pack Rebase
-        uses: dfreilich/pack-action@v2 dfreilich/pack-action@v2
+        uses: dfreilich/pack-action@v2.1.1
         with:
           args: 'rebase ${{ env.IMG_NAME }}'
 
       - name: Inspect Image
-        uses: dfreilich/pack-action@v2
+        uses: dfreilich/pack-action@v2.1.1
         with:
           args: 'inspect-image ${{ env.IMG_NAME }}'
 
