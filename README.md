@@ -1,4 +1,4 @@
-# Building and Publishing Docker Images with Pack CLI Locally and Remotely without writing Dockerfiles.
+# Build, Inspect, Test, and Push Docker Images with Pack CLI Locally and Remotely without writing Dockerfiles.
 
 ## Table of Contents
 
